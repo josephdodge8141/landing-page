@@ -23,6 +23,13 @@ collapsing.
 
 ## Deployment
 
-- Cloudflare Pages deploys `public` from `main` to `joedodge.dev`.
+- Cloudflare Workers Builds deploys `public` as static assets from `main` to
+  `joedodge.dev` with no build command.
 - `landing.joedodge.dev` is a Keycloak-protected local preview registered with
   the Not So Localhost registry.
+
+Deploy command:
+
+```sh
+npx wrangler deploy --name landing-page --compatibility-date 2026-08-25 --assets ./public/
+```

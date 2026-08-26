@@ -28,6 +28,14 @@ node --test tests/app.test.js
 
 ## Deploy
 
-Cloudflare Pages deploys `public` from the `main` branch with no build command.
-The public custom domain is `joedodge.dev`. Local remote testing is available at
-`landing.joedodge.dev` through the Not So Localhost registry and Keycloak.
+Cloudflare Workers Builds deploys `public` as static assets from the `main`
+branch. It has no build command and uses this deploy command:
+
+```sh
+npx wrangler deploy --name landing-page --compatibility-date 2026-08-25 --assets ./public/
+```
+
+Wrangler runs only in Cloudflare's build environment and is not a repository or
+runtime dependency. The public custom domain is `joedodge.dev`. Local remote
+testing is available at `landing.joedodge.dev` through the Not So Localhost
+registry and Keycloak.
