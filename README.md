@@ -18,7 +18,7 @@ build step, framework, or backend.
 /usr/bin/python3 -m http.server 7310 --bind 0.0.0.0 --directory public
 ```
 
-Open <http://localhost:7310>.
+Open `http://localhost:7310`.
 
 ## Test
 
