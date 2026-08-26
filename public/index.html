@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Current thoughts and ideas from Joe Dodge.">
+  <title>Joe Dodge</title>
+</head>
+<body>
+  <main style="max-width: 70ch; margin: auto">
+    <header>
+      <h1>Joe Dodge</h1>
+      <p>Current thoughts and ideas.</p>
+    </header>
+
+    <form id="filters">
+      <p>
+        <label for="search">Search ideas</label><br>
+        <input id="search" name="search" type="search" autocomplete="off">
+      </p>
+
+      <fieldset>
+        <legend>Tags</legend>
+        <div id="tags"></div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Date range</legend>
+        <label for="from">From</label>
+        <input id="from" name="from" type="date">
+        <label for="to">To</label>
+        <input id="to" name="to" type="date">
+      </fieldset>
+
+      <p><button type="reset">Clear filters</button></p>
+    </form>
+
+    <p>
+      <button id="expand" type="button">Expand all</button>
+      <button id="collapse" type="button">Collapse all</button>
+    </p>
+
+    <p id="status" role="status" aria-live="polite">Loading ideas.</p>
+    <section id="ideas" aria-label="Ideas"></section>
+
+    <noscript><p>JavaScript is required to load and search the ideas.</p></noscript>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
