@@ -12,7 +12,7 @@ collapsing.
 - Do not add packages, frameworks, a build step, or backend services.
 - Keep idea bodies as trusted HTML strings in `public/ideas.json`.
 - Keep the allowed tag enum in `public/tags.json`.
-- Keep styling inline and limited to the two declarations already on `<main>`.
+- Keep styling inline and limited to the title-centering declaration.
 - Use native HTML elements before adding JavaScript behavior.
 
 ## Commands
