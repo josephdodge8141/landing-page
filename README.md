@@ -12,6 +12,12 @@ build step, framework, or backend.
 - `public/ideas.json` stores dated ideas with HTML bodies.
 - `public/tags.json` defines the allowed tag enum.
 
+## Content
+
+`public/ideas.json` and `public/tags.json` are generated from the public
+[journal repository](https://github.com/josephdodge8141/journal). Add, update,
+or remove the two-file entry folders there instead of editing generated JSON.
+
 ## Run locally
 
 ```sh

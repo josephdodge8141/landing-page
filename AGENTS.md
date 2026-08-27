@@ -10,8 +10,9 @@ collapsing.
 
 - Keep the deployed site in `public`.
 - Do not add packages, frameworks, a build step, or backend services.
-- Keep idea bodies as trusted HTML strings in `public/ideas.json`.
-- Keep the allowed tag enum in `public/tags.json`.
+- Treat `public/ideas.json` and `public/tags.json` as generated files. Journal
+  source lives in `josephdodge8141/journal`; do not edit generated content here.
+- Idea bodies are trusted HTML rendered from the public journal's Markdown.
 - Keep styling inline and limited to the title-centering declaration.
 - Use native HTML elements before adding JavaScript behavior.
 
