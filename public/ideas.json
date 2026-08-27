@@ -1,8 +1,11 @@
 [
   {
-    "title": "Example idea",
-    "body": "<p>This is an idea. Replace it with a current thought, idea, or project.</p>",
-    "tags": ["idea"],
-    "date": "2026-08-26"
+    "id": "example-idea",
+    "title": "Example Idea",
+    "body": "<p>This is an example idea. Replace it with a current thought, idea, or project.</p>",
+    "tags": [
+      "idea"
+    ],
+    "date": "2026-08-27"
   }
 ]
