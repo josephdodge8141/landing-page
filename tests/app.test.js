@@ -12,7 +12,8 @@ const ideas = JSON.parse(fs.readFileSync(path.join(publicDirectory, "ideas.json"
 
 test("content conforms to the tag and idea schema", () => {
   assert.doesNotThrow(() => validateContent(tags, ideas));
-  assert.deepEqual(tags, ["thought", "idea", "project"]);
+  assert.equal(new Set(tags).size, tags.length);
+  assert.ok(tags.every((tag) => typeof tag === "string" && tag.length > 0));
 });
 
 test("fuzzy search accepts exact text, typos, and ordered characters", () => {

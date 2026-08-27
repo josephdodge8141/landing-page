@@ -21,5 +21,6 @@ jobs:
       - run: node --test tests/app.test.js
 
   ci-cd:
-    uses: josephdodge8141/auto-pr/.github/workflows/ci-cd-pipeline.yml@main
+    needs: static-checks
+    uses: josephdodge8141/auto-pr/.github/workflows/ci-cd-pipeline.yml@74b5105cac5cfb6614e0fc59b4c39eb8899df689
     secrets: inherit
