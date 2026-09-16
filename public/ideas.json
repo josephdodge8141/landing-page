@@ -8,5 +8,14 @@
       "ai"
     ],
     "date": "2026-09-15"
+  },
+  {
+    "id": "introduction",
+    "title": "Introduction",
+    "body": "<h1>Welcome to my thoughts</h1>\n<p>This is a collection of my thoughts on a variety of topics. I have a wife who is the best person in the world. I am a software engineer by trade. I enjoy many hobbies including volleyball, music, and chess. I have many curiousities including mathematics, economics, philosophy, and psychology. </p>\n<p>I will update this daily, but each thought may not be finalized on it's first publish.</p>\n<p>AI is not used to generate any content here. AI is used as a tool to collect resources and research material, but is never used to summarize content or offer insight.</p>",
+    "tags": [
+      "intro"
+    ],
+    "date": "2026-09-16"
   }
 ]
